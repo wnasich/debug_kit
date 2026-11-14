@@ -19,6 +19,13 @@ App::uses('DebugPanel', 'DebugKit.Lib');
 class LogPanel extends DebugPanel {
 
 /**
+ * Log engine that collects the request log messages, set by DebugKitLog.
+ *
+ * @var DebugKitLog
+ */
+	public $logger;
+
+/**
  * Constructor - sets up the log listener.
  *
  * @return \LogPanel
